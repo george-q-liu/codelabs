@@ -22,12 +22,10 @@ class LoggedOutView extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: FilledButton(
+              child: ElevatedButton(
                 onPressed: () async {
-                  // TODO: update email and password
-                  await state.logIn('TODO', 'TODO').then((_) {
-                    // TODO: update to check that state.user is not null
-                    if (true) {
+                  await state.logIn('dash@email.com', 'dashword').then((_) {
+                    if (state.user != null) {
                       context.go('/');
                     }
                   });
