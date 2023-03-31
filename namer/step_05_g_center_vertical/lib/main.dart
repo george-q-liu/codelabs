@@ -44,7 +44,7 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('A random idea:'),
+          Text('A random AWESOME idea:'),
           BigCard(pair: pair),
           ElevatedButton(
             onPressed: () {
@@ -60,16 +60,16 @@ class MyHomePage extends StatelessWidget {
 
 class BigCard extends StatelessWidget {
   const BigCard({
-    Key? key,
+    super.key,
     required this.pair,
-  }) : super(key: key);
+  });
 
   final WordPair pair;
 
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
-    var style = theme.textTheme.displayMedium!.copyWith(
+    final theme = Theme.of(context);
+    final style = theme.textTheme.displayMedium!.copyWith(
       color: theme.colorScheme.onPrimary,
     );
 
@@ -80,7 +80,7 @@ class BigCard extends StatelessWidget {
         child: Text(
           pair.asLowerCase,
           style: style,
-          semanticsLabel: pair.asPascalCase,
+          semanticsLabel: "${pair.first} ${pair.second}",
         ),
       ),
     );

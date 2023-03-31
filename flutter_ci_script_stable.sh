@@ -20,8 +20,11 @@ declare -a CODELABS=(
   "flame-building-doodle-dash"
   "github-client"
   "google-maps-in-flutter"
+  "haiku_generator"
   "in_app_purchases"
   "namer"
+  # TODO(DomesticMouse): enable on Flutter stable increment
+  # "next-gen-ui"
   "plugin_codelab"
   "star_counter"
   "testing_codelab"
