@@ -28,7 +28,6 @@ class HomeScreen extends StatelessWidget {
                       const Divider(),
                       Padding(
                         padding: const EdgeInsets.all(2),
-                        child: Image.asset('flutterfire_300x.png', scale: 1),
                       ),
                       const Divider(),
                     ],
@@ -43,7 +42,6 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Image.asset('dash.png'),
             Text(
               'Welcome!',
               style: Theme.of(context).textTheme.displaySmall,
