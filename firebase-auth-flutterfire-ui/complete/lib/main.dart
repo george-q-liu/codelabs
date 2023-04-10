@@ -6,7 +6,8 @@ import 'app.dart';
 import 'firebase_options.dart';
 
 // TODO(codelab user): Get API key
-const clientId = 'YOUR_CLIENT_ID';
+const clientId =
+    '198146297205-b5ebbbo4i6n7idab41184n383mvl7nkv.apps.googleusercontent.com';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
